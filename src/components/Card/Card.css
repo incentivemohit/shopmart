@@ -1,0 +1,20 @@
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: wheat;
+  width: 300px;
+  margin: 20px 20px;
+  padding: 10px 10px;
+}
+
+.product-img {
+  width: 280px;
+  height: 330px;
+}
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+.footer-container {
+  background-color: wheat;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-shopmart {
+  color: white;
+  font-size: 2.2rem;
+}
+.footer-about-us {
+  color: white;
+  font-size: 2rem;
+}
+
+.socialIcons {
+  background-color: yellow;
+  width: 130px;
+  margin: 0 auto;
+}
+.social-Icons-List {
+  list-style: none;
+  display: flex;
+}
+.social-Icons {
+  padding: 15px;
+  font-size: 22px;
+  color: white;
+}
+/*footer-center*/
+
+.footer-center {
+  margin-bottom: 10px;
+}
+.about-us-details {
+  color: white;
+}
+
+.developer-photos {
+  margin-top: 10px;
+  padding-top: 12px;
+  background-color: whitesmoke;
+}
+.developer-img {
+  margin-left: 22rem;
+}
