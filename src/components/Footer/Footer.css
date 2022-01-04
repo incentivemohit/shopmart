@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: wheat;
+  width: 100%;
 }
 .footer-top {
   display: flex;
@@ -45,4 +45,8 @@
 }
 .developer-img {
   margin-left: 22rem;
+}
+
+.footer-bottom {
+  margin-bottom: -50px;
 }

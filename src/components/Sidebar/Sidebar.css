@@ -1,0 +1,20 @@
+.sidebar-wrapper {
+  width: 280px;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+.dp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-
 import "./Card.css";
+
 import axios from "axios";
+import Heading from "../Heading/Heading";
 
 function Card() {
-  const [GetData, setData] = useState([0]);
+  const [GetData, setData] = useState([]);
 
   const getData = async () => {
     const { data } = await axios.get(
-      "https://newsapi.org/v2/everything?q=tesla&from=2021-11-25&sortBy=publishedAt&apiKey=cc40a50d7bbd4994943164327dfe8180"
+      "https://newsapi.org/v2/everything?q=apple&from=2021-12-25&to=2021-12-25&sortBy=popularity&apiKey=cc40a50d7bbd4994943164327dfe8180"
     );
 
     console.log(data.articles);
@@ -17,19 +18,16 @@ function Card() {
 
   useEffect(() => {
     getData();
-  }, [0]);
+  }, []);
 
   return (
     <>
+      <Heading title="Women Fashion" />
       <div className="product-wrapper">
         {GetData.map((product) => (
           <div className="product-card card" key={product.id}>
-            <div className="product-img">
-              <img
-                src={product.urlToImage}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+            <div className="product-card-img">
+              <img src={product.urlToImage} alt="" className="product-img" />
             </div>
             <div className="product-name">{product.title}</div>
             <div className="product-bottom">

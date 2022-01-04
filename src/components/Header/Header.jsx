@@ -17,10 +17,10 @@ function Header() {
           <div className="header-searchbar">
             <div className="header-select">
               <select
-                class="form-select form-select-sm"
+                class="form-select form-select-sm p-2"
                 aria-label=".form-select-sm example"
               >
-                <option selected>Open this select menu</option>
+                <option selected>Categories</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>

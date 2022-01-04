@@ -3,15 +3,20 @@ import Header from "../src/components/Header/Header";
 import Carousel from "../src/components/Carousel/Carousel";
 import Card from "../src/components/Card/Card";
 import Footer from "../src/components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <>
-      <Header />
-      <Carousel />
+      <Sidebar />
+      {/* <Header />
+
+       <Navbar />
+      <Carousel title="Latest Products" />
       <Card />
-      <Carousel />
-      <Footer />
+      <Carousel title="Men Fashion" />
+      <Footer /> */}
     </>
   );
 }

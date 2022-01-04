@@ -1,20 +1,37 @@
 .product-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
-
 .product-card {
-  background-color: wheat;
+  position: relative;
   width: 300px;
-  margin: 20px 20px;
-  padding: 10px 10px;
+  height: 500px;
+
+  margin: 20px 10px;
+  padding: 10px;
 }
 
 .product-img {
   width: 280px;
   height: 330px;
+  background-color: turquoise;
+  cursor: pointer;
+}
+.product-name {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
 }
 .product-bottom {
   display: flex;
+  position: absolute;
+  top: 28.2rem;
+  width: 280px;
   justify-content: space-between;
+}
+
+.product-name:hover {
+  color: purple;
 }
