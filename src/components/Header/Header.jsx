@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import logo from "../../images/logo.png";
 import cart from "../../images/cart.png";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -9,9 +10,15 @@ function Header() {
         <div className="header-wrapper">
           <div className="title-wrapper">
             <div id="title-logo">
-              <img width={50} height={50} src={logo} alt="" />
+              <Link to={"/"}>
+                <img width={50} height={50} src={logo} alt="" />
+              </Link>
             </div>
-            <div className="title-name">ShopMart</div>
+            <div className="title-name">
+              <Link to={"/"} className="title">
+                ShopMart
+              </Link>
+            </div>
           </div>
 
           <div className="header-searchbar">

@@ -20,7 +20,14 @@
   margin-right: 15px;
 }
 .title-name {
+  cursor: pointer;
+}
+.title {
   color: white;
+  text-decoration: none;
+}
+.title:hover {
+  color: yellow;
 }
 
 /*searchbar*/

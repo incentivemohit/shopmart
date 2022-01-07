@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 import "../Carousel/Carousel.css";
 import Heading from "../Heading/Heading";
+import { Link } from "react-router-dom";
 
 const Carousel = (props) => {
   const [GetData, setData] = useState([]);
@@ -74,7 +75,9 @@ const Carousel = (props) => {
                   style={{ width: "300px", height: "230px" }}
                 />
               </div>
-              <div className="carousel-product-name">{product.title}</div>
+              <div className="carousel-product-name">
+                <Link to={"/productdetails"}>{product.title}</Link>
+              </div>
 
               <div className="carousel-product-bottom">
                 <div className="product-rating">

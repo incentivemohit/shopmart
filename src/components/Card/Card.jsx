@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 import Heading from "../Heading/Heading";
@@ -29,7 +30,9 @@ function Card() {
             <div className="product-card-img">
               <img src={product.urlToImage} alt="" className="product-img" />
             </div>
-            <div className="product-name">{product.title}</div>
+            <div className="product-name">
+              <Link to={"/productdetails"}>{product.title}</Link>
+            </div>
             <div className="product-bottom">
               <div className="product-rating">
                 <i className="fa fa-star"></i>
@@ -39,9 +42,9 @@ function Card() {
                 <i className="fa fa-star"></i>
               </div>
               <div className="product-view-detail-button">
-                <a href="https://google.com">
+                <Link to="/productdetails">
                   <button className="btn btn-primary">View Details</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

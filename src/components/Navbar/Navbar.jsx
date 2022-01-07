@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import menuIcon from "../../images/circle.png";
 function Navbar() {
   return (
@@ -15,9 +16,9 @@ function Navbar() {
               />
             </li>
             <li className="nav-item active">
-              <a className="nav-link text-light" href="#">
+              <Link className="nav-link text-light" to={"/"}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-light" href="#">

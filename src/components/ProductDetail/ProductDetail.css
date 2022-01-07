@@ -1,0 +1,40 @@
+.productdetail-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.productdetail-img-block {
+  padding-top: 10px;
+}
+.productdetail-block {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.productdetail-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-mrp-cart-buttons ul {
+  list-style: none;
+  display: flex;
+}
+
+.product-mrp {
+  padding-top: 5px;
+  padding-right: 10px;
+  margin-left: -20px;
+}
+.CartButton {
+  padding-right: 10px;
+}
+
+.product-size {
+  width: 18%;
+}
+
+.product-description {
+  margin-top: 15px;
+}

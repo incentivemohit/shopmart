@@ -44,6 +44,11 @@ function Sidebar() {
                 Customers
               </a>
             </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                Login
+              </a>
+            </li>
           </ul>
         </div>
       </div>
